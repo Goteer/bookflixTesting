@@ -1,0 +1,140 @@
+html {
+  height: 100%;
+}
+
+body {
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#fff;
+	margin:0;
+	padding:0;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-image: linear-gradient(to bottom,#111 , #000);
+}
+
+#topBar {
+  padding-top: 1px;
+  padding-bottom: 1px;
+   background-image: linear-gradient(to bottom,#444, #222);
+}
+
+#bookflixTitle{
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+
+
+
+h1 {
+	color:red;
+}
+
+h2 {
+	margin: 0 30px;
+	color:white;
+}
+
+img {
+
+		height: 100%;
+		max-width: 100%;
+		object-fit: contain;
+	}
+
+.swiper-wrapper {
+	padding: 20px 0;
+  margin: 0 30px;
+}
+
+.swiper-slide {
+	text-align:center;
+	font-size:18px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	vertical-align:middle;
+    transition: 250ms all;
+}
+
+
+.swiper-slide:hover {
+        transform: scale(1.11);
+        z-index: 1;
+    }
+
+
+:root {
+		--swiper-theme-color: #fff;
+	}
+
+.overText {
+  position: relative;
+  display: block;
+}
+
+.overText:after {
+  content: attr(title);
+  color: rgba(255, 255, 255, 0.75);
+  padding: .5em 1em;
+  font-family: helvetica;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: all .25s ease-in-out;
+}
+.overText:hover:after {
+  background: rgba(0,0,0, 0.8);
+  color: #fff;
+}
+
+.overText:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.overText:hover:before {
+  content: attr(title);
+  position: absolute;
+  margin-top: -.5em;
+  top: 20%;
+  left: 0;
+  width: 100%;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  font-weight: bold;
+}
+
+/*  book  */
+.book {
+	    margin: 0 auto;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#flipbook .page {
+	background:white;
+}
+
+#flipbook .hard {
+	background:gray;
+}
